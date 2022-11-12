@@ -1,0 +1,84 @@
+Saturday Novenber 12 2022
+	LISP TUTORIAL
+	It is case insensitive
+		COMMENTS
+			;;;; - description of a program
+			;;; - basic comments
+			;; - indented with code
+			; - end of line comment
+			#|| multiline 
+			    comment ||#
+		
+		OUTPUTTING CODE
+			format - (format t " hello world ~%")
+				t - output to terminal
+				~% - new line
+				~:d - number separated by commas
+				~nf - format to n number of characters
+				~,nf - format to n number of decimal places
+				~,,2f - format to percent
+			print - (print "hello world)
+			        (print "~a! ~%" *name*)
+				~a! - output the global variable passed in the function
+			To control the format of the output:
+				(setq *print-case* :option)
+				options - :captitalise - First letter in uppercase
+					      :upcase - All of the letters in upperscase
+						  :downcase - All of the letters in lowercase
+	    
+		TAKING INPUTS
+			(defvar *name* (read))
+				defvar - define variable
+				*name* - global variable called name*
+				read - take input from command line
+		
+		FUNCTIONS
+		Almost everything in lisp is a function
+		start by defining it and taking its parameters
+			(defun name-is (parameters)
+				(what to do))
+		when calling the function, use its name and the parameters to be passed
+			(name-is parameters)
+		
+	MATH OPERATIONS
+		(+ n m) - add n and m
+		(- n m) - subtract m from name
+		(/ n m) - divide n by m
+		(* n m) - multiply n and m ; returns fraction
+		(* n m.0) - multiply n and m ; returns decimal
+		(rem n m) - remainder of the division of n and m
+		(mod n m) - remainder of the division of n and m
+		(expt n m) - n to power mod
+		(exp n) - exponent of n
+		(sqrt n) - square root
+		(log n m) - lof of n to base m
+		(eq n m) - is n equal to m, T for true and Nil for false
+		floor, ceiling - same format to get the floor and ceiling of a decimal
+		oddp, evenp to get whether a number is odd or even
+		numberp - get whether a character is a number
+		example:
+			(format t "~d ~%" (expt 4 2)) = 16
+		
+	CONDITIONALS
+	equators = >,<, <=, >=, = can be used with not and or
+	can use cond in place of if
+		if - statemets
+			suppose there is only one statement
+			(if (equator var1 var2)
+				(do something) ; condition is met
+				(do sth else)) ; condition is not met
+			suppose there is more than one statement
+			(if (equators var1 var2)
+				progn(
+					statements);if true
+				(statements)) ;if false
+			
+		case - statements
+			(case var_name
+				(value1 what to do)
+				(value2 what to do)
+				(otherwise what to do))
+	
+	LOOPING
+	use loop to iterate through
+			
