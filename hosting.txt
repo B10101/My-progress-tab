@@ -1,0 +1,15 @@
+Cloud hosting for python scripts
+		zeta.sh
+		render.com
+		Pythonanywhere.com
+		railway.app
+		replit.com
+		github
+		hugging face
+		
+VPS hosting
+		linode
+		aws
+		Google cloud
+		
+	

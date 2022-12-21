@@ -81,4 +81,10 @@ Saturday Novenber 12 2022
 	
 	LOOPING
 	use loop to iterate through
+	
+	FUNCTIONS
+		The syntax is as follows
+		(defun name (parameter*)
+		  "Optional documentation string."
+		  body-form*)
 			
