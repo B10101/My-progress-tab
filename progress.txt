@@ -1,5 +1,4 @@
-Saturday Novenber 12 2022
-	LISP TUTORIAL
+LISP TUTORIAL
 	It is case insensitive
 		COMMENTS
 			;;;; - description of a program
@@ -87,4 +86,35 @@ Saturday Novenber 12 2022
 		(defun name (parameter*)
 		  "Optional documentation string."
 		  body-form*)
+
+
+
+
+
+
+
+
+
+
+NGINX
+	Directly install from http://nginx.org/en/download.html
+	file to be edited is nginx.conf
+	FOR STATIC FILES:
+		Create a HTTP context
+			include mime.types
 			
+			create a server context
+				listen directive that points to port
+				root directive that routes to location of served data
+				
+				suppose there is a content block, it lives in here
+					example: location /place{
+					root/alias path;
+					use a try_files context to load pages not named index
+					example: try_files /place/try.html /index.html =404;
+					this shows the place to find the file, if not present, load the home page else throw a 404 eror
+					}
+					alias is used when we do not want to change the location
+		
+		
+		Create an events context
